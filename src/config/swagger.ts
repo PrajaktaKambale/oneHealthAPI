@@ -127,6 +127,10 @@ const swaggerDefinition = {
       name: 'Clinics',
       description: 'Clinic management endpoints for healthcare facilities',
     },
+    {
+      name: 'Master Data',
+      description: 'Master data management endpoints for diseases, patient types, and reference data',
+    },
   ],
 };
 
