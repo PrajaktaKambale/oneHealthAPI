@@ -26,3 +26,6 @@ export { default as clinicRoutes } from "./clinic/clinic.routes";
 
 // doctor routes
 export { default as doctorRoutes } from "./clinic/doctor.routes";
+
+// master data routes
+export { default as masterRoutes } from "./master/master.routes";

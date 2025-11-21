@@ -18,6 +18,7 @@ import {
   patientRoutes,
   clinicRoutes,
   doctorRoutes,
+  masterRoutes,
 } from './modules';
 import setupRoutes from './routes/setup.routes';
 
@@ -94,6 +95,7 @@ app.use(
   patientRoutes,
   clinicRoutes,
   doctorRoutes,
+  masterRoutes,
 );
 
 // Setup routes (for development/testing only)
