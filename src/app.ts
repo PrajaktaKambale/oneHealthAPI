@@ -23,6 +23,11 @@ import setupRoutes from './routes/setup.routes';
 
 const app = express();
 
+// Add a JSON replacer to handle BigInt serialization
+app.set('json replacer', (key: string, value: any) =>
+  typeof value === 'bigint' ? value.toString() : value,
+);
+
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
   max: 100, // Limit each IP to 100 requests per windowMs
